@@ -6,8 +6,10 @@
   font-family: NexaBold;
   src: local("NexaBold"), url(./fonts/Nexa\Bold.otf);
 }
+
 html {
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 html * {
   margin: auto;
@@ -82,6 +84,7 @@ header > div > div > p {
   background-color: #dcdcdc;
   height: 500px;
 }
+
 .all > div > input {
   background-color: #ffffff;
   /* box-shadow: 0px 1px 1px 0px #000000; */
@@ -125,6 +128,7 @@ header > div > div > p {
 .social > a {
   color: #8f8f8f;
   text-decoration: none;
+  cursor: pointer;
 }
 .social > a:nth-child(2n + 1) {
   margin-left: 40px;
@@ -136,16 +140,36 @@ header > div > div > p {
 .img1 {
   margin-top: 36px;
   margin-left: 299px;
+  width: 630px;
+  height: 390px;
+  background: url("./Layer\ 4.png");
+  position: relative;
+}
+.img1 > div {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 371px;
+  height: 62px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 25px;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.img1 > div:hover {
+  box-shadow: 0px 1px 1px 0px #000000;
 }
 .text1 {
-  height: 392px;
+  height: 390px;
   width: 311px;
   background: #373737;
-  margin-top: -397px;
-  margin-left: 931px;
+  margin-top: -390px;
+  margin-left: 929px;
 }
 .palka {
-  height: 392px;
+  height: 390px;
   width: 9px;
   background-color: #f26c4f;
   position: absolute;
@@ -200,14 +224,16 @@ header > div > div > p {
 }
 .divs > div {
   height: 380px;
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 11px;
-  padding: 0px;
+  /* display: inline-block; */
+  /* margin-left: 10px; */
+  /* margin-right: 11px; */
+  /* padding: 0px; */
   background-color: #dcdcdc;
+  position: relative;
+  /* margin-left: 15px; */
 }
 .divs > div:nth-child(1) {
-  margin-left: -108px;
+  /* margin-left: -108px; */
 }
 .divs > div > div > p {
   margin-left: 25px;
@@ -215,6 +241,47 @@ header > div > div > p {
   font-family: Arial;
   color: #4f4f4f;
   font-size: 25px;
+  position: relative;
+  top: -100px;
+}
+.dran1 {
+  position: relative;
+  /* margin-left: 301px; */
+  left: 301px;
+  margin-right: 0;
+  margin-left: 0;
+}
+.dran2 {
+  position: relative;
+
+  margin-left: 20px;
+  margin-right: 0;
+  left: 301px;
+}
+
+.dran3 {
+  position: relative;
+  margin-left: 150px;
+  left: 168px;
+}
+.kub2 {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #f26c4f;
+  border-left: 100px solid transparent;
+  position: relative;
+  top: -384px;
+  left: 100px;
+}
+/* .dran1 > div > p {
+  position: relative;
+  top: -100px;
+} */
+.kub2 > div {
+  position: relative;
+  top: -78px;
+  left: -37px;
+  cursor: pointer;
 }
 .img3 {
   background-color: #dcdcdc;
@@ -231,7 +298,7 @@ header > div > div > p {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  margin-top: 15px;
+  margin-top: -80px;
   margin-left: 25px;
 }
 .zaeb {
@@ -246,6 +313,17 @@ header > div > div > p {
   background-color: #ffffff;
   position: relative;
   top: 20px;
+  border-left: 4px solid #f26c4f;
+}
+
+.left > div:hover {
+  background-color: #f26c4f;
+}
+.left > div:hover > * {
+  color: white;
+}
+.left > div:hover {
+  border-color: #ce4e32;
 }
 .left > :nth-child(2) {
   margin-top: 13px;
@@ -258,6 +336,15 @@ header > div > div > p {
   background-color: #ffffff;
   margin-top: 9px;
 }
+
+.mini > div:hover {
+  background-color: #f26c4f;
+}
+
+.mini > div:hover > * {
+  color: white;
+}
+
 .mini > :nth-child(n + 1) {
   position: relative;
   top: 20px;
@@ -271,18 +358,27 @@ header > div > div > p {
   margin-top: -764px;
 }
 
-.palka1 {
+/* .palka1 {
   background-color: #f26c4f;
   width: 4px;
   height: 173px;
   position: absolute;
   top: 0;
-}
-.palka2 {
+} */
+/* .palka2 {
   background-color: #f26c4f;
   width: 4px;
   height: 77px;
   position: absolute;
+} */
+.mini > div:hover > .palka2 {
+  background-color: #ce4e32;
+}
+.mini > div {
+  border-left: 4px solid #f26c4f;
+}
+.mini > div:hover {
+  border-color: #ce4e32;
 }
 .left > div > p {
   font-family: Arial;
@@ -310,10 +406,13 @@ header > div > div > p {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
-
+  cursor: pointer;
   text-align: center;
   text-shadow: 0px 1px 0px #ffffff;
   text-transform: uppercase;
+}
+.pishka > p:hover {
+  color: #f26c4f;
 }
 .pipka {
   display: flex;
@@ -321,6 +420,7 @@ header > div > div > p {
   align-items: center;
   position: relative;
   top: 8px;
+  cursor: pointer;
 }
 .nice {
   background-color: #ffffff;
@@ -397,6 +497,7 @@ footer > span {
   top: 39px;
   left: 292px;
   margin-left: 14px;
+  cursor: pointer;
 }
 footer > p {
   font-family: Arial;
@@ -558,6 +659,9 @@ footer > p {
   margin-right: 510px;
   padding-right: 10px;
 }
+.mini > div:hover > h2 {
+  border-color: white;
+}
 .mini > div > h3 {
   font-family: Tahoma;
   color: #8f8f8f;
@@ -670,6 +774,7 @@ footer > p {
   position: relative;
   top: -76px;
   left: -38px;
+  cursor: pointer;
 }
 .right > div {
   height: 581px;
@@ -800,13 +905,28 @@ footer > p {
   top: 475px;
   left: 0px;
 }
+
 .pilka {
   position: absolute;
   background-color: #cacaca;
   width: 3px;
   height: 44px;
+  top: 0px;
 }
-/* .about > p {
+.about > p {
+  font-family: Arial;
+  color: #474747;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.16px;
+  /* line-height: 36px; */
+  text-align: left;
+  position: relative;
+  top: 10px;
+  left: 28px;
+  cursor: pointer;
+}
+.write > p {
   font-family: Arial;
   color: #474747;
   font-size: 16px;
@@ -815,6 +935,89 @@ footer > p {
   line-height: 36px;
   text-align: left;
   position: relative;
-  top: 10px;
-  left: 10px;
-} */
+  top: 2px;
+  left: 30px;
+  cursor: pointer;
+}
+.about > h1 {
+  font-family: Arial;
+  color: #a7a7a7;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  position: relative;
+  top: -10px;
+  left: 105px;
+}
+.write > h1 {
+  font-family: Arial;
+  color: #a7a7a7;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  position: relative;
+  top: -27px;
+  left: 89px;
+}
+.how > p {
+  font-family: Arial;
+  color: #474747;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.16px;
+  line-height: 36px;
+  text-align: left;
+  position: relative;
+  top: 2px;
+  left: 30px;
+  cursor: pointer;
+}
+.how > h1 {
+  font-family: Arial;
+  color: #a7a7a7;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  position: relative;
+  top: -27px;
+  left: 123px;
+}
+.video > p {
+  font-family: Arial;
+  color: #474747;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.16px;
+  line-height: 36px;
+  text-align: left;
+  position: relative;
+  top: 2px;
+  left: 30px;
+  cursor: pointer;
+}
+.video > h1 {
+  font-family: Arial;
+  color: #a7a7a7;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  position: relative;
+  top: -27px;
+  left: 178px;
+}
+.about:hover {
+  background-color: #f26c4f;
+}
+.write:hover {
+  background-color: #f26c4f;
+}
+.how:hover {
+  background-color: #f26c4f;
+}
+.video:hover {
+  background-color: #f26c4f;
+}
